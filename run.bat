@@ -1,0 +1,1 @@
+pytest -s -v --html=Reports/report_registration.html testCases/test_Registration.py
