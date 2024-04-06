@@ -10,3 +10,9 @@
 2024-04-04 00:03:56,749 - root - INFO - *************** Starting Registration Test ***************
 2024-04-04 00:04:09,088 - root - INFO - *************** Registration Test Complete ***************
 2024-04-04 00:04:09,088 - root - INFO - *************** Test_001_Registration Successful ***************
+2024-04-06 23:55:54,691 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (122.0.6261.128) detected in PATH at C:\Users\CHARLIE\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.105); currently, chromedriver 123.0.6312.105 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry
+2024-04-06 23:56:17,261 - root - INFO - *************** Starting Login Test ***************
+2024-04-06 23:57:12,543 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (122.0.6261.128) detected in PATH at C:\Users\CHARLIE\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.105); currently, chromedriver 123.0.6312.105 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry
+2024-04-06 23:57:18,795 - root - INFO - *************** Starting Login Test ***************
+2024-04-06 23:57:40,716 - root - INFO - ****************** Login Successful ******************
+2024-04-06 23:57:40,716 - root - INFO - ****************** Test_002_Login Successful ******************
