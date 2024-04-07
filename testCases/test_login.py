@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-
 from pageObjects.Login import Login
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
