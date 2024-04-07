@@ -44,7 +44,6 @@ class Test_003_SearchAndAddToCart:
         self.add.add_product_to_cart()
         self.add.confirmProduct2_InCart("iMac")
 
-        
         self.logger.info("*************** Test_003_SearchAndAddToCart Successful ***************")
         self.driver.close()
 
