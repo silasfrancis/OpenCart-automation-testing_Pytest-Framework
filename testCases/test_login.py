@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.by import By
 from pageObjects.Login import Login
 from utilities.readProperties import ReadConfig
@@ -10,6 +11,7 @@ class Test_002_Login:
 
     logger = LogGen.loggen()
 
+    @pytest.mark.sanity
     def test_login(self, setup):
         self.logger.info("*************** Starting Login Test ***************")
         self.driver = setup

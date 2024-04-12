@@ -1,3 +1,5 @@
+import pytest
+
 from pageObjects.Registration import Registration
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
@@ -9,6 +11,7 @@ class Test_001_Registration:
 
     logger = LogGen.loggen()
 
+    @pytest.mark.sanity
     def test_registration(self, setup):
         self.logger.info("*************** Starting Registration Test ***************")
         self.driver = setup

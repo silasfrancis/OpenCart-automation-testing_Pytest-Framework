@@ -13,6 +13,11 @@ class AddToCart:
     def add_product_to_cart(self):
         self.driver.find_element(By.XPATH, self.add_to_cart_btn).click()
 
+    def clickShoppingCart(self):
+        self.driver.find_element(By.XPATH, self.shopping_cart_xpath).click()
+        time.sleep(5)
+        self.driver.refresh()
+
     def confirmProduct1_InCart(self, product):
         self.driver.find_element(By.XPATH, self.shopping_cart_xpath).click()
         self.driver.refresh()

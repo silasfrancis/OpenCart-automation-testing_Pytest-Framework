@@ -8,6 +8,7 @@ class SearchProduct:
         self.driver = driver
 
     def inputProduct(self, product_name):
+        self.driver.find_element(By.XPATH, self.search_product_xpath).clear()
         self.driver.find_element(By.XPATH, self.search_product_xpath).send_keys(product_name)
 
     def searchProduct(self):

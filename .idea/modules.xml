@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/OpenCart.iml" filepath="$PROJECT_DIR$/.idea/OpenCart.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../OrangeHRM/.idea/OrangeHRM.iml" filepath="$PROJECT_DIR$/../OrangeHRM/.idea/OrangeHRM.iml" />
     </modules>
   </component>
 </project>

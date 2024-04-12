@@ -1,3 +1,5 @@
+import pytest
+
 from pageObjects.Login import Login
 from pageObjects.SearchProduct import SearchProduct
 from pageObjects.AddToCart import AddToCart
@@ -11,7 +13,8 @@ class Test_003_SearchAndAddToCart:
 
     logger = LogGen.loggen()
 
-    def test_login(self, setup):
+    @pytest.mark.regression
+    def test_searchandaddtocart(self, setup):
         self.logger.info("*************** Logging In ***************")
         self.driver = setup
         self.driver.get(self.baseURL)

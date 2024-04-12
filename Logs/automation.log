@@ -61,3 +61,21 @@
 2024-04-07 01:05:58,689 - root - INFO - *************** Searching for Product: iMac ***************
 2024-04-07 01:06:00,192 - root - INFO - *************** Adding Product to Shopping Cart ***************
 2024-04-07 01:06:06,628 - root - INFO - *************** Test_003_SearchAndAddToCart Successful ***************
+2024-04-11 17:33:42,437 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (122.0.6261.128) detected in PATH at C:\Users\CHARLIE\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.106); currently, chromedriver 123.0.6312.122 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry
+2024-04-11 17:33:49,234 - root - INFO - *************** Logging In ***************
+2024-04-12 12:27:47,958 - selenium.webdriver.common.selenium_manager - WARNING - The chromedriver version (122.0.6261.128) detected in PATH at C:\Users\CHARLIE\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (123.0.6312.106); currently, chromedriver 123.0.6312.122 is recommended for chrome 123.*, so it is advised to delete the driver in PATH and retry
+2024-04-12 12:28:05,655 - root - INFO - *************** Logging In ***************
+2024-04-12 12:28:16,700 - root - INFO - *************** Login Successful ***************
+2024-04-12 12:28:16,700 - root - INFO - *************** Starting Test_003_SearchAndAddToCart ***************
+2024-04-12 12:28:16,701 - root - INFO - *************** Searching for Product: iPhone ***************
+2024-04-12 12:28:19,007 - root - INFO - *************** Adding Product to Shopping Cart ***************
+2024-04-12 12:28:19,204 - root - INFO - *************** Searching for Product: iMac ***************
+2024-04-12 12:28:20,105 - root - INFO - *************** Adding Product to Shopping Cart ***************
+2024-04-12 12:28:20,253 - root - INFO - ********************* Entering Shopping Cart ************************
+2024-04-12 12:28:26,823 - root - INFO - ********************* Checking Out ************************
+2024-04-12 12:28:29,279 - root - INFO - ********************* Entering Billing Details ************************
+2024-04-12 12:28:32,156 - root - INFO - ********************* Entering Delivery Details ************************
+2024-04-12 12:28:34,738 - root - INFO - ********************* Setting Payment Method ************************
+2024-04-12 12:28:36,159 - root - INFO - ********************* Confirming Order ************************
+2024-04-12 12:28:39,671 - root - INFO - ********************* Product CheckOut Successful ************************
+2024-04-12 12:28:39,671 - root - INFO - ********************* Test_004_CheckOut Successful ************************

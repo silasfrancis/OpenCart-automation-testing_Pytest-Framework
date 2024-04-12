@@ -1,3 +1,2 @@
-pytest -s -v --html=Reports/report.html testCases/test_Registration.py
-pytest -s -v --html=Reports/report.html testCases/test_login.py
-pytest -s -v --html=Reports/report.html testCases/test_searchAndAddProductToCart.py
+pytest -s -v -m "sanity" --html=./Reports/report.html testCases/
+pytest -s -v -m "regression" --html=./Reports/report.html testCases/

@@ -99,7 +99,7 @@ class ConfirmOrder:
     def __init__(self, driver):
         self.driver = driver
 
-    def clickContinue(self):
+    def clickContinueConfirm(self):
         self.driver.find_element(By.XPATH, self.continue_btn_xpath).click()
 
     def orderConfirmation(self):
