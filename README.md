@@ -4,7 +4,7 @@ This project involves the testing of the Customers Module on the OpenCart Demo P
 ## Features
 - Page Object Model
 - HTML Reports
-- Logging
+- Automation logs
 - Multiple Browsers Support
 - Parallel Testing
 
