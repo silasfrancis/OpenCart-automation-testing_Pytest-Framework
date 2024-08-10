@@ -1,4 +1,4 @@
-# Testing nopCommerce Demo Application
+# Testing OpenCart Demo Application
 This project involves the testing of the Customers Module on the OpenCart Demo Platform using the Pytest FrameWork
 
 ## Features
