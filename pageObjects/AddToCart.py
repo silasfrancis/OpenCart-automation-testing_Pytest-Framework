@@ -18,25 +18,19 @@ class AddToCart:
         time.sleep(5)
         self.driver.refresh()
 
-    def confirmProduct1_InCart(self, product):
+    def confirmProduct1_InCart(self):
         self.driver.find_element(By.XPATH, self.shopping_cart_xpath).click()
         self.driver.refresh()
         time.sleep(5)
         target_locator = self.driver.find_element(By.XPATH, self.product1_name_xpath)
-        if target_locator.text == product:
-            assert True
-        else:
-            assert False
+        return target_locator
 
     def confirmProduct2_InCart(self, product):
         self.driver.find_element(By.XPATH, self.shopping_cart_xpath).click()
         time.sleep(5)
         self.driver.refresh()
         target_locator = self.driver.find_element(By.XPATH, self.product2_name_xpath)
-        if target_locator.text == product:
-            assert True
-        else:
-            assert False
+        return target_locator
 
 
 
