@@ -53,10 +53,11 @@ class Registration:
 
     def confirmRegistation(self):
         reg_confirm = self.driver.find_element(By.XPATH, self.account_create_notif_xpath)
-        if reg_confirm.text == "Your Account Has Been Created!":
-            self.driver.find_element(By.XPATH, self.click_continue_xpath).click()
-        else:
-            assert False
+        return reg_confirm
+
+    def continueReg(self):
+        self.driver.find_element(By.XPATH, self.click_continue_xpath).click()
+
     def logOut(self):
         self.driver.find_element(By.XPATH, self.logout_xpath).click()
         self.driver.find_element(By.XPATH, self.continue_logout_xpath).click()
