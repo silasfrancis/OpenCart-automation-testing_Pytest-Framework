@@ -80,7 +80,10 @@ class Test_004_CheckOut:
         self.logger.info("********************* Confirming Order ************************")
         self.orderconfirm = ConfirmOrder(self.driver)
         self.orderconfirm.clickContinueConfirm()
-        self.orderconfirm.orderConfirmation()
+        if self.orderconfirm.orderConfirmation().text() == "Your order has been placed!":
+            assert True
+        else: assert False
+        self.orderconfirm.continueToShopping()
         self.logger.info("********************* Product CheckOut Successful ************************")
         self.logger.info("********************* Test_004_CheckOut Successful ************************")
         self.driver.close()
