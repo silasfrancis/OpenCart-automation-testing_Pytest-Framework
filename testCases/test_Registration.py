@@ -30,7 +30,8 @@ class Test_001_Registration:
         self.reg.confirmPassword(self.password)
         self.reg.clickPPcheckbox()
         self.reg.contineRegistration()
-        self.reg.confirmRegistation()
+        if self.reg.confirmRegistation().text() == "Your Account Has Been Created!":
+            self.reg.continueReg()
         self.reg.logOut()
         self.driver.close()
         self.logger.info("*************** Registration Test Complete ***************")
