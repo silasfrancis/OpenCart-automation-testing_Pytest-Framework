@@ -104,8 +104,10 @@ class ConfirmOrder:
 
     def orderConfirmation(self):
         order_confirmation = self.driver.find_element(By.XPATH, self.order_confirmation_xpath)
-        if order_confirmation.text == "Your order has been placed!":
-            self.driver.find_element(By.XPATH, self.continue_to_Shopping_xpath).click()
-        else:
-            assert False
+        return order_confirmation.text()
+
+
+
+    def continueToShopping(self):
+        self.driver.find_element(By.XPATH, self.continue_to_Shopping_xpath).click()
 
