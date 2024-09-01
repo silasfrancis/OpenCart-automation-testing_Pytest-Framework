@@ -6,6 +6,7 @@ from pageObjects.AddToCart import AddToCart
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
+
 class Test_003_SearchAndAddToCart:
     baseURL = ReadConfig.getApplicationURL()
     username = ReadConfig.getUsername()
@@ -38,14 +39,18 @@ class Test_003_SearchAndAddToCart:
         self.search.searchProduct()
         self.logger.info("*************** Adding Product to Shopping Cart ***************")
         self.add.add_product_to_cart()
-        self.add.confirmProduct1_InCart("iPhone")
+        if self.add.confirmProduct1_InCart().text() == "iPhone":
+            assert True
+        else: assert False
 
         self.logger.info("*************** Searching for Product: iMac ***************")
         self.search.inputProduct("iMac")
         self.search.searchProduct()
         self.logger.info("*************** Adding Product to Shopping Cart ***************")
         self.add.add_product_to_cart()
-        self.add.confirmProduct2_InCart("iMac")
+        if self.add.confirmProduct2_InCart.text() == "iMac":
+            assert True
+        else: assert False
 
         self.logger.info("*************** Test_003_SearchAndAddToCart Successful ***************")
         self.driver.close()
